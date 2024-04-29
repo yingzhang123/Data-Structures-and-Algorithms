@@ -62,6 +62,6 @@ int main()
     cout << BinarySearch(arr, size, 45) << endl;
     cout << BinarySearch(arr, size, 12) << endl;
     cout << BinarySearch(arr, size, 64) << endl;
-    
+
     return 0;
 }
