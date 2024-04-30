@@ -1,18 +1,15 @@
-// 10_¶ş·ÖËÑË÷Ëã·¨.cpp : ´ËÎÄ¼ş°üº¬ "main" º¯Êı¡£³ÌĞòÖ´ĞĞ½«ÔÚ´Ë´¦¿ªÊ¼²¢½áÊø¡£
-//
-
 #include <iostream>
 using namespace std;
 
 // O(logN)
-// ¶ş·ÖËÑË÷µİ¹é´úÂë
+// äºŒåˆ†æœç´¢é€’å½’ä»£ç 
 int BinarySearch(int arr[], int i, int j, int val)
 {
-    if (i > j)             //µİ¹é½áÊøÌõ¼ş
+    if (i > j)             //é€’å½’ç»“æŸæ¡ä»¶
         return -1;
 
     int mid = (i + j) / 2; 
-    if (arr[mid] == val)   // ±È½ÏÖĞ¼äÊıÖµ
+    if (arr[mid] == val)   // æ¯”è¾ƒä¸­é—´æ•°å€¼
     {
         return mid;
     }
@@ -26,7 +23,7 @@ int BinarySearch(int arr[], int i, int j, int val)
     }
 }
 
-// ¶ş·ÖËÑË÷·Çµİ¹éÊµÏÖ
+// äºŒåˆ†æœç´¢éé€’å½’å®ç°
 int BinarySearch(int arr[], int size, int val)
 {
     return BinarySearch(arr, 0, size - 1, val);
